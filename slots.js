@@ -165,7 +165,7 @@ const game = () => {
     let accountBalance = getDeposit();
 
     while(true){
-        console.log("Current Balance: £" + accountBalance)
+        console.log(`Current Balance: £ ${accountBalance}`)
         const lines = getLines();
         const bet = getBet(accountBalance, lines);
         accountBalance -= bet * lines;
